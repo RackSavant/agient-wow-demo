@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guided Demo - Lenovo Agentic AI Conference Demo</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nav-left">
+                    <a class="nav-link" href="../index.html">Home</a>
+                    <a class="nav-link" href="features.html">Features</a>
+                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </div>
+                <div class="nav-right">
+                    <span class="badge">Demo Mode</span>
+                    <button class="btn danger" data-demo-reset>Reset</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="demo-toolbar">
+        <div class="container">
+            <div class="inner">
+                <div class="demo-steps" data-demo-steps></div>
+                <div class="button-row" style="margin-top: 0;">
+                    <button class="btn" data-demo-back>Back</button>
+                    <button class="btn primary" data-demo-next>Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+        <section class="hero">
+            <h1>WOW Workflow: Agentic AI that finishes the job</h1>
+            <p>
+                Stage 1 is a short story you can present. Then you can hand it to the team for self-guided exploration.
+            </p>
+            <div class="button-row">
+                <button class="btn primary" data-demo-unlock>Hand off to team (Self-Guided)</button>
+                <button class="btn" data-demo-lock>Presenter mode</button>
+            </div>
+        </section>
+
+        <section class="grid" data-presenter-stage>
+            <div class="card span-6">
+                <h3>The setup (30 seconds)</h3>
+                <p>
+                    A critical executive is traveling. Their device is flagged with an elevated risk signal.
+                    The enterprise needs a safe, fast resolution.
+                </p>
+                <div class="kpis">
+                    <div class="kpi"><div class="value">12 min</div><div class="label">Time to contain</div></div>
+                    <div class="kpi"><div class="value">1</div><div class="label">Approval gate</div></div>
+                    <div class="kpi"><div class="value">100%</div><div class="label">Audit coverage</div></div>
+                </div>
+            </div>
+
+            <div class="card span-6">
+                <h3>The breakthrough</h3>
+                <p><strong>Not just chat.</strong> A multi-agent team that plans, acts across tools, and verifies outcomes.</p>
+                <p><strong>Not reckless autonomy.</strong> Policy checks and approvals for high-impact changes.</p>
+                <p><strong>Not hand-wavy.</strong> Evidence artifacts and an audit trail leadership can trust.</p>
+            </div>
+
+            <div class="card span-12">
+                <h3>What makes it "Agentic" (the punchline)</h3>
+                <p>
+                    The system is judged by outcomes: it executes end-to-end work with guardrails, then produces verifiable
+                    artifacts. That is the bridge from GenAI to Agentic AI — and the path toward broader generalization.
+                </p>
+                <p><small>When ready, click “Hand off to team” and let them drive.</small></p>
+            </div>
+        </section>
+
+        <section class="grid" data-self-guided style="display: none;">
+            <div class="card span-6">
+                <h3>Start the WOW workflow</h3>
+                <p>Run the guided steps (Next/Back works at the top) or jump directly to any step.</p>
+                <div class="button-row">
+                    <a class="btn primary" href="demo-step-1.html" data-demo-start="ops">Start at Step 1 (Ops + Security)</a>
+                    <a class="btn" href="demo-step-1.html" data-demo-start="exec">Start at Step 1 (Executive view)</a>
+                </div>
+            </div>
+            <div class="card span-6">
+                <h3>Jump to a step</h3>
+                <div class="button-row">
+                    <a class="btn" href="demo-step-1.html">1) Intake</a>
+                    <a class="btn" href="demo-step-2.html">2) Approval</a>
+                    <a class="btn" href="demo-step-3.html">3) Execute</a>
+                    <a class="btn" href="demo-success.html">4) Outcome</a>
+                </div>
+                <p><small>Reset anytime to return to Presenter mode.</small></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 RackSavant - Agient AI Conference Demo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

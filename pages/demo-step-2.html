@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Step 2 - Plan + Approvals</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nav-left">
+                    <a class="nav-link" href="../index.html">Home</a>
+                    <a class="nav-link" href="features.html">Features</a>
+                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </div>
+                <div class="nav-right">
+                    <span class="badge">Demo Mode</span>
+                    <button class="btn danger" data-demo-reset>Reset</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="demo-toolbar">
+        <div class="container">
+            <div class="inner">
+                <div class="demo-steps" data-demo-steps></div>
+                <div class="button-row" style="margin-top: 0;">
+                    <button class="btn" data-demo-back>Back</button>
+                    <button class="btn primary" data-demo-next>Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Step 2: Plan + Approval Gate</h1>
+            <p>
+                The agent proposes actions, checks policy, and pauses for approval before high-impact changes.
+            </p>
+        </section>
+
+        <section class="grid">
+            <div class="card span-6">
+                <h3>Proposed plan</h3>
+                <p><strong>1)</strong> Contain device (restrict access + force credential reset)</p>
+                <p><strong>2)</strong> Spin up replacement order (pre-approved config)</p>
+                <p><strong>3)</strong> Prepare handoff package (apps, settings, secure token)</p>
+                <p><strong>4)</strong> Provide user instructions + support handoff</p>
+            </div>
+            <div class="card span-6">
+                <h3>Approval required</h3>
+                <p><strong>Action:</strong> Containment changes for executive account</p>
+                <p><strong>Approver:</strong> IT Manager (Demo User)</p>
+                <div class="button-row">
+                    <button class="btn ok" data-demo-approve>Approve</button>
+                    <button class="btn danger" data-demo-deny>Deny</button>
+                </div>
+                <p><small>Demo Mode defaults to approval for a smooth on-stage run.</small></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 RackSavant - Agient AI Conference Demo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

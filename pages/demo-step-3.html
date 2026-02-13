@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Step 3 - Execution + Audit Trail</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nav-left">
+                    <a class="nav-link" href="../index.html">Home</a>
+                    <a class="nav-link" href="features.html">Features</a>
+                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </div>
+                <div class="nav-right">
+                    <span class="badge">Demo Mode</span>
+                    <button class="btn danger" data-demo-reset>Reset</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="demo-toolbar">
+        <div class="container">
+            <div class="inner">
+                <div class="demo-steps" data-demo-steps></div>
+                <div class="button-row" style="margin-top: 0;">
+                    <button class="btn" data-demo-back>Back</button>
+                    <button class="btn primary" data-demo-next>Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Step 3: Execute + Verify</h1>
+            <p>
+                The agent executes actions and attaches evidence. The goal is not just a good answer — it is a
+                verifiable outcome.
+            </p>
+        </section>
+
+        <section class="grid">
+            <div class="card span-8">
+                <h3>Audit trail (high level)</h3>
+                <p><strong>Containment:</strong> Access restricted and credentials rotated.</p>
+                <p><strong>Replacement:</strong> Order created with approved device profile.</p>
+                <p><strong>Handoff:</strong> Secure setup package generated for the executive.</p>
+                <p><strong>Verification:</strong> Policies satisfied, changes logged.</p>
+            </div>
+            <div class="card span-4">
+                <h3>Evidence artifacts</h3>
+                <p>Policy check: PASS</p>
+                <p>Approval: RECORDED</p>
+                <p>Actions: COMPLETED</p>
+                <p>Outcome: READY FOR HANDOFF</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 RackSavant - Agient AI Conference Demo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Step 1 - Mission Intake</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nav-left">
+                    <a class="nav-link" href="../index.html">Home</a>
+                    <a class="nav-link" href="features.html">Features</a>
+                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </div>
+                <div class="nav-right">
+                    <span class="badge">Demo Mode</span>
+                    <button class="btn danger" data-demo-reset>Reset</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="demo-toolbar">
+        <div class="container">
+            <div class="inner">
+                <div class="demo-steps" data-demo-steps></div>
+                <div class="button-row" style="margin-top: 0;">
+                    <button class="btn" data-demo-back>Back</button>
+                    <button class="btn primary" data-demo-next>Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Step 1: Mission Intake</h1>
+            <p>
+                The agent gathers the goal, constraints, and stakeholders. Demo Mode seeds realistic details so the flow is
+                repeatable on stage.
+            </p>
+        </section>
+
+        <section class="grid">
+            <div class="card span-8">
+                <h3>Incoming signal</h3>
+                <p><strong>Alert:</strong> Executive device flagged with elevated risk signal while traveling.</p>
+                <p><strong>Goal:</strong> Contain risk, preserve business continuity, and deliver a user-ready replacement.</p>
+                <p><strong>Constraints:</strong> Minimum disruption, policy-compliant actions, audit trail required.</p>
+            </div>
+            <div class="card span-4">
+                <h3>Agents on the team</h3>
+                <p><strong>Ops Agent:</strong> device and fleet actions</p>
+                <p><strong>Security Agent:</strong> policy + containment</p>
+                <p><strong>Procurement Agent:</strong> replacement logistics</p>
+                <p><strong>Support Agent:</strong> user-ready handoff</p>
+            </div>
+        </section>
+
+        <section class="grid">
+            <div class="card span-6">
+                <h3>Lenovo apps/components in Mission Intake</h3>
+                <p><strong>Lenovo xIQ:</strong> Orchestrates the mission, assigns specialist agents, and tracks progress.</p>
+                <p><strong>ThinkShield:</strong> Policy guardrails and risk signal evaluation before actions are proposed.</p>
+                <p><strong>Lenovo Fleet / Device Management:</strong> Device identity, compliance posture, last check-in.</p>
+                <p><strong>Lenovo Qira:</strong> Ambient user context + cross-device handoff to keep the user moving.</p>
+                <p><strong>Lenovo TruScale / Services:</strong> Entitlements and replacement eligibility/SLA confirmation.</p>
+                <p><strong>Lenovo Support Experience:</strong> Case creation and auditable handoff to humans.</p>
+            </div>
+            <div class="card span-6">
+                <h3>Integration log (example calls)</h3>
+                <div class="integration-log">
+                    <div class="log-line"><span class="svc">xIQ</span><span class="call">POST /missions/intake</span><span class="result">Mission created: M-1042</span></div>
+                    <div class="log-line"><span class="svc">ThinkShield</span><span class="call">GET /policy/evaluate?missionId=M-1042</span><span class="result">PASS (approval required for containment)</span></div>
+                    <div class="log-line"><span class="svc">ThinkShield</span><span class="call">GET /risk/signal?deviceId=LD-7781</span><span class="result">ELEVATED</span></div>
+                    <div class="log-line"><span class="svc">Fleet Mgmt</span><span class="call">GET /devices/LD-7781</span><span class="result">Owner: Exec, last seen: 12m</span></div>
+                    <div class="log-line"><span class="svc">Fleet Mgmt</span><span class="call">GET /devices/LD-7781/compliance</span><span class="result">Compliant: TRUE</span></div>
+                    <div class="log-line"><span class="svc">Qira</span><span class="call">GET /user/context?userId=U-0042</span><span class="result">Traveling, prefers mobile handoff</span></div>
+                    <div class="log-line"><span class="svc">TruScale</span><span class="call">GET /entitlements?serial=LD-7781</span><span class="result">Replacement eligible (24h SLA)</span></div>
+                    <div class="log-line"><span class="svc">Support</span><span class="call">POST /cases</span><span class="result">Case created: INC-7781</span></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 RackSavant - Agient AI Conference Demo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

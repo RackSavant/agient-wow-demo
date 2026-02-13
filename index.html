@@ -10,47 +10,54 @@
     <header>
         <div class="container">
             <nav>
-                <a href="index.html">Home</a>
-                <a href="pages/features.html">Features</a>
-                <a href="pages/about.html">About</a>
-                <a href="pages/contact.html">Contact</a>
+                <div class="nav-left">
+                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="pages/features.html">Features</a>
+                    <a class="nav-link" href="pages/about.html">About</a>
+                    <a class="nav-link" href="pages/contact.html">Contact</a>
+                </div>
+                <div class="nav-right">
+                    <span class="badge">Conference Demo</span>
+                    <a class="btn primary" href="pages/demo.html">Start Guided Demo</a>
+                </div>
             </nav>
         </div>
     </header>
 
     <main class="container">
-        <div style="text-align: center;">
-            <div style="font-size: 4em; margin-bottom: 20px;">🤖</div>
+        <section class="hero">
             <h1>Lenovo Agentic AI Conference Demo</h1>
-            <p style="font-size: 1.2em; color: #667eea; margin-bottom: 30px;">
-                Welcome to the future of intelligent computing
+            <p>
+                A conference-ready, repeatable click-through that demonstrates the shift from generative AI to
+                <strong>Agentic AI</strong> — and the path toward <strong>AGI</strong>.
             </p>
-            <p>Experience Lenovo's cutting-edge agentic AI capabilities designed to transform enterprise solutions.</p>
-            <p>This interactive demo showcases how AI agents can understand, learn, and act autonomously to solve complex problems.</p>
-            
-            <div style="margin-top: 40px; text-align: left;">
-                <h2 style="text-align: center;">Why Choose Agient AI?</h2>
-                <ul>
-                    <li><strong>Autonomous Decision Making:</strong> AI agents that make intelligent decisions without constant human intervention</li>
-                    <li><strong>Real-time Adaptation:</strong> Systems that learn and adapt to changing conditions in real-time</li>
-                    <li><strong>Enterprise Integration:</strong> Seamlessly integrate with your existing systems and workflows</li>
-                    <li><strong>Scalability:</strong> From small teams to enterprise-wide deployments</li>
-                </ul>
+            <div class="button-row">
+                <a class="btn primary" href="pages/demo.html">Run the WOW Workflow</a>
+                <a class="btn" href="pages/features.html">Explore Features</a>
+                <a class="btn" href="pages/contact.html">Get in Touch</a>
             </div>
+        </section>
 
-            <div style="margin-top: 40px; text-align: center;">
-                <a href="pages/features.html" style="display: inline-block; padding: 12px 30px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 5px; font-weight: 600;">
-                    Explore Features
-                </a>
-                <a href="pages/contact.html" style="display: inline-block; padding: 12px 30px; margin-left: 15px; background: linear-gradient(135deg, #764ba2 0%, #667eea 100%); color: white; text-decoration: none; border-radius: 5px; font-weight: 600;">
-                    Get in Touch
-                </a>
+        <section class="grid">
+            <div class="card span-4">
+                <h3>Autonomous Decision Making</h3>
+                <p>Agents plan and execute end-to-end work, not just generate text.</p>
             </div>
-        </div>
+            <div class="card span-4">
+                <h3>Enterprise Guardrails</h3>
+                <p>Policy checks, approvals, and auditable steps for safe autonomy.</p>
+            </div>
+            <div class="card span-4">
+                <h3>Verifiable Outcomes</h3>
+                <p>Evidence artifacts and an audit trail that leadership can trust.</p>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 RackSavant - Agient AI Conference Demo. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2026 RackSavant - Agient AI Conference Demo. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="js/script.js"></script>
